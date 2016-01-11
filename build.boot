@@ -11,6 +11,7 @@
                  [com.cemerick/piggieback "0.2.1"]     ;; needed by bREPL
                  [weasel "0.7.0"]                      ;; needed by bREPL
                  [org.clojure/tools.nrepl "0.2.12"]    ;; needed by bREPL
+                 [reagent "0.5.1"]
                  ])
 
 (require '[adzerk.boot-cljs :refer [cljs]]

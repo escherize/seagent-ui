@@ -1,0 +1,4 @@
+(+ 12 3)
+(js/alert)
+(start-repl)
+(js/alert "ok")

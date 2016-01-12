@@ -2,3 +2,4 @@
 (js/alert)
 (start-repl)
 (js/alert "ok")
+(start-figwheel!)

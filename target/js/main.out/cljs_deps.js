@@ -9,12 +9,6 @@ goog.addDependency("../adzerk/boot_reload/display.js", ['adzerk.boot_reload.disp
 goog.addDependency("../adzerk/boot_reload/websocket.js", ['adzerk.boot_reload.websocket'], ['cljs.core', 'clojure.browser.net', 'goog.net.WebSocket', 'clojure.browser.event']);
 goog.addDependency("../cljs/reader.js", ['cljs.reader'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);
 goog.addDependency("../adzerk/boot_reload/client.js", ['adzerk.boot_reload.client'], ['adzerk.boot_reload.connection', 'adzerk.boot_reload.reload', 'adzerk.boot_reload.display', 'goog.net.jsloader', 'cljs.core', 'adzerk.boot_reload.websocket', 'clojure.browser.net', 'cljs.reader', 'clojure.browser.event']);
-goog.addDependency("../adzerk/boot_reload.js", ['adzerk.boot_reload'], ['cljs.core', 'adzerk.boot_reload.client']);
-goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core']);
-goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['goog.dom', 'goog.userAgent.product', 'cljs.core', 'goog.object', 'clojure.browser.net', 'cljs.repl', 'goog.array', 'clojure.browser.event']);
-goog.addDependency("../weasel/impls/websocket.js", ['weasel.impls.websocket'], ['cljs.core', 'clojure.browser.net', 'goog.net.WebSocket', 'clojure.browser.event']);
-goog.addDependency("../weasel/repl.js", ['weasel.repl'], ['goog.dom', 'clojure.browser.repl', 'weasel.impls.websocket', 'cljs.core', 'clojure.browser.net', 'cljs.reader', 'clojure.browser.event']);
-goog.addDependency("../adzerk/boot_cljs_repl.js", ['adzerk.boot_cljs_repl'], ['weasel.repl', 'cljs.core']);
 goog.addDependency("../reagent/interop.js", ['reagent.interop'], ['cljs.core']);
 goog.addDependency("../reagent/debug.js", ['reagent.debug'], ['cljs.core']);
 goog.addDependency("../reagent/impl/util.js", ['reagent.impl.util'], ['reagent.interop', 'cljs.core', 'reagent.debug', 'clojure.string']);
@@ -25,6 +19,12 @@ goog.addDependency("../reagent/impl/component.js", ['reagent.impl.component'], [
 goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'clojure.string']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'cljsjs.react', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug']);
 goog.addDependency("../seagent_ui/util.js", ['seagent_ui.util'], ['cljs.core']);
-goog.addDependency("../seagent_ui/button.js", ['seagent_ui.button'], ['reagent.core', 'cljs.core', 'seagent_ui.util']);
+goog.addDependency("../seagent_ui/button.js", ['seagent_ui.button'], ['reagent.core', 'cljs.core', 'seagent_ui.util', 'clojure.string']);
 goog.addDependency("../seagent_ui/core.js", ['seagent_ui.core'], ['seagent_ui.button', 'reagent.core', 'cljs.core']);
+goog.addDependency("../adzerk/boot_reload.js", ['adzerk.boot_reload'], ['cljs.core', 'adzerk.boot_reload.client', 'seagent_ui.core']);
+goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core']);
+goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['goog.dom', 'goog.userAgent.product', 'cljs.core', 'goog.object', 'clojure.browser.net', 'cljs.repl', 'goog.array', 'clojure.browser.event']);
+goog.addDependency("../weasel/impls/websocket.js", ['weasel.impls.websocket'], ['cljs.core', 'clojure.browser.net', 'goog.net.WebSocket', 'clojure.browser.event']);
+goog.addDependency("../weasel/repl.js", ['weasel.repl'], ['goog.dom', 'clojure.browser.repl', 'weasel.impls.websocket', 'cljs.core', 'clojure.browser.net', 'cljs.reader', 'clojure.browser.event']);
+goog.addDependency("../adzerk/boot_cljs_repl.js", ['adzerk.boot_cljs_repl'], ['weasel.repl', 'cljs.core']);
 goog.addDependency("../boot/cljs/main6678.js", ['boot.cljs.main6678'], ['adzerk.boot_reload', 'cljs.core', 'adzerk.boot_cljs_repl', 'seagent_ui.core']);

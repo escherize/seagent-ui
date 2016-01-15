@@ -3,14 +3,14 @@ goog.provide('seagent_ui.util');
 goog.require('cljs.core');
 seagent_ui.util.section = (function seagent_ui$util$section(var_args){
 var args__6053__auto__ = [];
-var len__6046__auto___7835 = arguments.length;
-var i__6047__auto___7836 = (0);
+var len__6046__auto___6790 = arguments.length;
+var i__6047__auto___6791 = (0);
 while(true){
-if((i__6047__auto___7836 < len__6046__auto___7835)){
-args__6053__auto__.push((arguments[i__6047__auto___7836]));
+if((i__6047__auto___6791 < len__6046__auto___6790)){
+args__6053__auto__.push((arguments[i__6047__auto___6791]));
 
-var G__7837 = (i__6047__auto___7836 + (1));
-i__6047__auto___7836 = G__7837;
+var G__6792 = (i__6047__auto___6791 + (1));
+i__6047__auto___6791 = G__6792;
 continue;
 } else {
 }
@@ -27,8 +27,8 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 
 seagent_ui.util.section.cljs$lang$maxFixedArity = (0);
 
-seagent_ui.util.section.cljs$lang$applyTo = (function (seq7834){
-return seagent_ui.util.section.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq7834));
+seagent_ui.util.section.cljs$lang$applyTo = (function (seq6789){
+return seagent_ui.util.section.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq6789));
 });
 
 //# sourceMappingURL=util.js.map

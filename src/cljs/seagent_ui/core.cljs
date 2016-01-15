@@ -1,13 +1,14 @@
 (ns seagent-ui.core
   (:require [reagent.core :as r]
-            [seagent-ui.button :as button]))
+            [seagent-ui.button :as button]
+            [seagent-ui.catan :as catan]))
 
-(defn welcome-page []
-  [:div
-   [:h1 "Welcome to Seagent!"]
-   [:p "The reagent wrapper for Semantic UI"]
-   [:h2 "Button Examples:"]
-   [button/examples]])
+#_(defn welcome-page []
+    [:div
+     [:h1 "Welcome to Seagent!"]
+     [:p "The reagent wrapper for Semantic UI"]
+     [:h2 "Button Examples:"]
+     [button/examples]])
 
 (defn ^:export init! []
-  (r/render-component [welcome-page] (.-body js/document)))
+  (r/render-component [catan/dice-roller] (.-body js/document)))

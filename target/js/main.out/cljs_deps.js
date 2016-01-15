@@ -20,7 +20,8 @@ goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['r
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'cljsjs.react', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug']);
 goog.addDependency("../seagent_ui/util.js", ['seagent_ui.util'], ['cljs.core']);
 goog.addDependency("../seagent_ui/button.js", ['seagent_ui.button'], ['reagent.core', 'cljs.core', 'seagent_ui.util', 'clojure.string']);
-goog.addDependency("../seagent_ui/core.js", ['seagent_ui.core'], ['seagent_ui.button', 'reagent.core', 'cljs.core']);
+goog.addDependency("../seagent_ui/catan.js", ['seagent_ui.catan'], ['reagent.core', 'cljs.core']);
+goog.addDependency("../seagent_ui/core.js", ['seagent_ui.core'], ['seagent_ui.button', 'reagent.core', 'cljs.core', 'seagent_ui.catan']);
 goog.addDependency("../adzerk/boot_reload.js", ['adzerk.boot_reload'], ['cljs.core', 'adzerk.boot_reload.client', 'seagent_ui.core']);
 goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core']);
 goog.addDependency("../clojure/browser/repl.js", ['clojure.browser.repl'], ['goog.dom', 'goog.userAgent.product', 'cljs.core', 'goog.object', 'clojure.browser.net', 'cljs.repl', 'goog.array', 'clojure.browser.event']);

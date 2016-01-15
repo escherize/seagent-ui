@@ -30,23 +30,23 @@ throw cljs.core.missing_protocol.call(null,"IWebSocket.open?",this$);
 });
 
 weasel.impls.websocket.websocket_connection = (function weasel$impls$websocket$websocket_connection(var_args){
-var args7650 = [];
-var len__6046__auto___7653 = arguments.length;
-var i__6047__auto___7654 = (0);
+var args7684 = [];
+var len__6046__auto___7687 = arguments.length;
+var i__6047__auto___7688 = (0);
 while(true){
-if((i__6047__auto___7654 < len__6046__auto___7653)){
-args7650.push((arguments[i__6047__auto___7654]));
+if((i__6047__auto___7688 < len__6046__auto___7687)){
+args7684.push((arguments[i__6047__auto___7688]));
 
-var G__7655 = (i__6047__auto___7654 + (1));
-i__6047__auto___7654 = G__7655;
+var G__7689 = (i__6047__auto___7688 + (1));
+i__6047__auto___7688 = G__7689;
 continue;
 } else {
 }
 break;
 }
 
-var G__7652 = args7650.length;
-switch (G__7652) {
+var G__7686 = args7684.length;
+switch (G__7686) {
 case 0:
 return weasel.impls.websocket.websocket_connection.cljs$core$IFn$_invoke$arity$0();
 
@@ -60,7 +60,7 @@ return weasel.impls.websocket.websocket_connection.cljs$core$IFn$_invoke$arity$2
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args7650.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args7684.length)].join('')));
 
 }
 });
@@ -112,10 +112,10 @@ goog.net.WebSocket.prototype.clojure$browser$event$IEventType$ = true;
 goog.net.WebSocket.prototype.clojure$browser$event$IEventType$event_types$arity$1 = (function (this$){
 var this$__$1 = this;
 return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,cljs.core.map.call(null,((function (this$__$1){
-return (function (p__7657){
-var vec__7658 = p__7657;
-var k = cljs.core.nth.call(null,vec__7658,(0),null);
-var v = cljs.core.nth.call(null,vec__7658,(1),null);
+return (function (p__7691){
+var vec__7692 = p__7691;
+var k = cljs.core.nth.call(null,vec__7692,(0),null);
+var v = cljs.core.nth.call(null,vec__7692,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.call(null,k.toLowerCase()),v], null);
 });})(this$__$1))
 ,cljs.core.merge.call(null,cljs.core.js__GT_clj.call(null,goog.net.WebSocket.EventType))));

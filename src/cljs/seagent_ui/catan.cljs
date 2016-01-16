@@ -20,7 +20,7 @@
      [:div.column.fifteen.wide
       [:div {:class (str (cond
                            (#{6 8} outcome) "red"
-                           (= 7 outcome) "grey"
+                           (= 7 outcome) "black"
                            :else "blue") " ui active progress")}
        [:div.bar {:style {:width pct}}
         [:div.progress pct-display]]]]]))
@@ -61,7 +61,7 @@
         editing? (r/atom false)
         hover? (r/atom false)]
     (fn [name selected?]
-      [:div.column {:on-mouse-over #(reset! hover? true)
+      [:div.column {:on-mouse-over #(when (not @editing?) (reset! hover? true))
                     :on-mouse-out #(reset! hover? false)}
        (if @editing?
          [:div.ui.input {:style {:width "100px"}}

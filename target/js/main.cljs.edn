@@ -1,1 +1,0 @@
-{:require [seagent-ui.core adzerk.boot-reload adzerk.boot-cljs-repl], :compiler-options {:asset-path "js/main.out"}}

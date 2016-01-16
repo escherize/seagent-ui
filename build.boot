@@ -24,7 +24,11 @@
   (comp
    (serve :dir "target")
    (watch)
+   ;; nb speak is not known to work
+   (speak)
    (reload :on-jsload 'seagent-ui.core/init!)
    (cljs-repl) ;; before cljs task
    (cljs)
    (target :dir #{"target"})))
+
+
